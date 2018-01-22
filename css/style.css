@@ -1,0 +1,27 @@
+/*global*/
+.m-l-0{
+    margin-left: 0 !important;
+}
+.m-r-0{
+    margin-right: 0 !important;
+}
+/*header*/
+ul.sidebar{
+    margin: 0;
+    padding: 0;
+}
+ul.sidebar li{
+    list-style-type: none;
+}
+.bd-sidebar{
+    position: sticky;
+    background-color: #fff;
+    top: 4rem;
+    height: 100vh;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+/*content*/
+.bd-content{
+    padding-left: 3rem !important;
+}
+
