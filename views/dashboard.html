@@ -1,2 +1,42 @@
-<h1>Dashboard</h1>
+<div class="row m-b-15">
+    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-4">
+        <h4 class="m-b-0">Surveyor List</h4>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
+        <select class="form-control">
+        <option ng-repeat="x in years">
+            {{x}}
+        </option>
+    </select>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
+        <select class="form-control">
+        <option ng-repeat="x in months">
+            {{x}}
+        </option>
+    </select>
+    </div>
+</div>
+<div class="table-responsive table-bordered" ng-controller="DashboardCtrl">
+    <table class="table table-striped m-b-0">
+        <thead>
+            <th>Sr. No.</th>
+            <th>Surveyor Name</th>
+            <th>Mobile No.</th>
+            <th>DOB</th>
+            <th>Email ID</th>
+            <th>View Details</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in names">
+                <td>{{x.srno}}</td>
+                <td>{{x.name}}</td>
+                <td>{{x.mobile}}</td>
+                <td>{{x.dob}}</td>
+                <td>{{x.email}}</td>
+                <td><a href="#!surveyor_details" class="btn btn-sm btn-primary">View Details</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
