@@ -1,3 +1,4 @@
 var sapuApp = angular.module("sapuApp", [
-    "ngRoute"
+    'ngRoute'
+    //'ui.grid'
 ]);

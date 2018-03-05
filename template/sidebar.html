@@ -1,32 +1,21 @@
-<ul class="nav flex-column">
+<div class="row">
+    <div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 col-profile-img">
+        <img src="./img/default-user-photo.png" alt="..." class="rounded-circle">
+    </div>
+    <div class="col-xl-8 col-md-8 col-lg-8 col-sm-12 col-profile-info">
+        <p>Prasad Gote</p>
+        <p>9860402800</p>
+        <p>prasad.gote14321@gmail.com</p>
+    </div>
+</div>
+<ul class="nav flex-column sidebar-menu">
   <li class="nav-item">
-    <a class="nav-link active" href="#/!">Dashboard</a>
+    <a class="nav-link active" href="#/!"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#!profile">Profile</a>
+    <a class="nav-link" href="#!profile"><i class="fa fa-user-circle-o" aria-hidden="true"></i>User Management</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#!setting">Setting</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#!arogya-mitra">Arogya Mitra</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#!birth">Birth</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#!health">Health</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#!events">Events</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#!arogya-bank">Arogya Bank</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#!monthly-reports">Monthly Reports</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Logout</a>
+  <li class="nav-item" ng-controller="mainCtrl" >
+    <a class="nav-link" href ng-click="logout();"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
   </li>
 </ul>
