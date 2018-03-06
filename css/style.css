@@ -11,6 +11,12 @@
 .m-b-15{
     margin-bottom: 15px;
 }
+.p-l-0{
+    padding-left: 0 !important;
+}
+.p-r-0{
+    padding-right: 0 !important;
+}
 /*header*/
 ul.sidebar{
     margin: 0;
@@ -77,5 +83,33 @@ ul.surveyor-menu li:hover a{
 }
 ul.surveyor-menu li a img{
     margin: 15px 0;
+}
+/*Sidebar*/
+.profile-dropdown .dropdown-toggle{
+    color: #fff;
+}
+.profile-dropdown .dropdown-toggle:hover{
+    text-decoration: none;
+}
+.profile-dropdown .dropdown-toggle:before{
+    content: initial;
+}
+.profile-dropdown .dropdown-toggle i{
+    padding-right: 5px;
+}
+.profile-dropdown .dropdown-menu{
+    min-width: 15rem;
+    padding: 30px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+    margin-top: 10px;
+}
+.profile-img{
+    width: 60px;
+}
+.profile-img img{
+    width: 100%;
+}
+.profile-info p{
+    margin: 0;
 }
 

@@ -33,6 +33,22 @@ sapuApp.config(function($routeProvider) {
     .when("/surveyor_details",{
         templateUrl : 'views/surveyor_details.html',
         controller: 'SurveyorCtrl'
+    })
+    .when("/arogya_tapasni",{
+        templateUrl : 'views/arogya_tapasni.html',
+        controller: 'ArogyaCtrl'
+    })
+    .when("/karyakram_vyavasthapan",{
+        templateUrl : 'views/karyakram_vyavasthapan.html',
+        controller: 'KaryakramCtrl'
+    })
+    .when("/balak_janm",{
+        templateUrl : 'views/balak_janm.html',
+        controller: 'BalakjanmCtrl'
+    })
+    .when("/arogya_abhipray",{
+        templateUrl : 'views/arogya_abhipray.html',
+        controller: 'ArogyaabhiprayCtrl'
     });
 });
 
