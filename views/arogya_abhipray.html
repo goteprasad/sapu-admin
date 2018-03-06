@@ -1,0 +1,40 @@
+<div class="row" ng-controller="ArogyaabhiprayCtrl">
+    <div class="col">
+        <div class="pull-left">
+            <h4 class="m-b-15">आरोग्य बँक अभिप्राय</h4>
+        </div>
+        <div class="pull-right">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#!/">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="#!surveyor_details">Surveyor Details</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">आरोग्य बँक अभिप्राय</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="clearfix"></div>
+        <p class="m-b-0"><strong>Name : </strong>Prasad Gote</p>
+        <p class="m-b-0"><strong>Mobile : </strong>9860402800</p>
+        <p class="m-b-0"><strong>Email ID : </strong>prasad.gote14321@gmail.com</p>
+        <hr>
+        <h4 class="m-b-15">Question and answers</h4>
+        <div class="table-responsive table-bordered">
+            <table class="table table-striped m-b-0">
+                <thead>
+                <th>Sr.No.</th>
+                <th>Question</th>
+                <th>Answer</th>
+                <th>Date</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="x in questions">
+                        <td>{{x.srno}}</td>
+                        <td>{{x.que}}</td>
+                        <td>{{x.ans}}</td>
+                        <td>{{x.date}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
