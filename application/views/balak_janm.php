@@ -48,7 +48,8 @@
 
 
                                         <?php $var = 0;
-                                        foreach ($birthreport as $key => $value): $var++; ?>
+                                        foreach ($birthreport as $key => $value): $var++;
+                                            ?>
                                             <tr>
                                                 <td><?php echo $var; ?></td>
                                                 <td><?php echo $value->name_of_mother; ?></td>
@@ -72,7 +73,19 @@
         </div>
         <!-- Modal -->
         <div class="modal fade" id="modalbalak" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">बालक जन्म नोंद</h5>
+                        <button type="button" class="close" data-dismiss="modal"  aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div id ="modeldata" class="modal-body">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -88,11 +101,11 @@
     function getDetails(birthid)
     {
         $.ajax({
-            url: "balakjanmDetails?birthid="+birthid,
+            url: "balakjanmDetails?birthid=" + birthid,
             type: "GET",
             success: function (data) {
-                 $("#modalbalak").html(data);
-                
+                $("#modeldata").html(data);
+
             }
         });
     }
