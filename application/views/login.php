@@ -18,16 +18,16 @@
                         <div class="card">
                             <h5 class="card-header">Login</h5>
                             <div class="card-body">
-                                <form id="login-form" role="form" method="post">
+                                <form id="login-form" role="form" action='<?php echo base_url("welcome/login") ?>' method='post'>
                                     <div class="form-group">
                                         <label>User Name</label>
-                                        <input type="text" id="mobile" class="form-control" placeholder="Type mobile no." tabindex="1">
+                                        <input type="text" id="mobile" name='username' class="form-control" placeholder="Type mobile no." tabindex="1">
                                     </div>
                                     <div class="form-group">
                                         <label>Password</label>
-                                        <input type="password" id="password" class="form-control" placeholder="Type password" tabindex="2">
+                                        <input type="password" id="password" name='password' class="form-control" placeholder="Type password" tabindex="2">
                                     </div>
-                                    <a href="/index.php/welcome/dashboard" class="btn btn-success">Login</a>
+                                    <button  class="btn btn-success">Login</button>
                                 </form>
                             </div>
                         </div>
