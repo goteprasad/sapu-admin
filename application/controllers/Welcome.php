@@ -131,8 +131,8 @@ class Welcome extends CI_Controller {
         $this->load->view('tpl/modal_balak',$data);
     }
     
-    public function arogyaabhipray() {
-        $this->load->view('arogya_abhipray');
+    public function arogya_mitara_list() {
+        $this->load->view('arogya_mitara_list');
     }
 
 }

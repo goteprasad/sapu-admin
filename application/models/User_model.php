@@ -152,7 +152,16 @@ class User_model extends CI_Model {
     }
 
     public function getServayers($month, $year) {
-        $query = $this->db->select("user_id,user_table.* FROM `answer_table` LEFT JOIN user_table ON(user_id=id) WHERE MONTH(ans_date) = " . $month . " AND YEAR(ans_date) = " . $year . " GROUP BY user_id UNION SELECT user_id,user_table.* FROM `birth_table` LEFT JOIN user_table ON(user_id=id) WHERE MONTH(month_of_registration) = " . $month . " AND YEAR(month_of_registration) = " . $year . " GROUP BY user_id")->get();
+        
+        $query;
+       if(isset($month)&&isset($year))
+       {
+           $query = $this->db->select("user_id,user_table.* FROM `answer_table` LEFT JOIN user_table ON(user_id=id) WHERE MONTH(ans_date) = " . $month . " AND YEAR(ans_date) = " . $year . " GROUP BY user_id UNION SELECT user_id,user_table.* FROM `birth_table` LEFT JOIN user_table ON(user_id=id) WHERE MONTH(month_of_registration) = " . $month . " AND YEAR(month_of_registration) = " . $year . " GROUP BY user_id")->get();
+        
+       }
+        else {
+           $query=$this->db->select("*")->get("user_table");
+       }
         $result = $query->result();
         $query->free_result();
         return $result;
